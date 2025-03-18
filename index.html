@@ -112,6 +112,8 @@
     }, 5000);
 });
 </script>
+
+
     <!-- Loading Screen -->
     <!-- Landing Section -->
     <header class="landing" role="banner">
@@ -130,6 +132,106 @@
         I'm Yonatan Betre, I'm an architect and interior designer with expertise in building design, furniture design, realistic 3D visualization, and immersive virtual tours. I invite you to Explore my portfolio to observe my skills in action and how I transform concepts into reality.
      </p> 
     </nav>
+
+    <!-- for type erase effect-->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const typedElement = document.getElementById('typed-description');
+          
+          // Text configurations
+          const content = {
+            desktop: {
+              text: "I'm Yonatan Betre, an architect and interior designer with expertise in building design, furniture design, realistic 3D visualization, and immersive virtual tours. I invite you to Explore my portfolio to observe my skills in action.",
+              speed: 30
+            },
+            mobile: {
+              texts: [
+                "Hi",
+                "I'm Yonatan Betre",
+                "Profficient in building design, interior design, furniture design, 3D visualization, and virtual reality.",
+                "I craft functional and aesthetically refined designs through innovative solutions.",
+                "Skilled in advanced BIM, 3D modeling, rendering, and post-production software.",
+                "Specialized in creating immersive virtual tours."
+              ],
+              typeSpeed: 30,
+              pause: 4000,
+              fadeDuration: 800 // Should match CSS transition duration
+            }
+          };
+        
+          let animationTimeout;
+        
+          function clearAnimation() {
+            clearTimeout(animationTimeout);
+            typedElement.textContent = '';
+            typedElement.classList.remove('fade-out');
+          }
+        
+          function desktopTyping() {
+            let index = 0;
+            function type() {
+              if (index < content.desktop.text.length) {
+                typedElement.textContent += content.desktop.text.charAt(index);
+                index++;
+                animationTimeout = setTimeout(type, content.desktop.speed);
+              }
+            }
+            clearAnimation();
+            type();
+          }
+        
+          function mobileTyping() {
+            let currentSentence = 0;
+            let text = '';
+            
+            function type() {
+              const currentText = content.mobile.texts[currentSentence];
+              
+              if (text.length < currentText.length) {
+                text = currentText.substring(0, text.length + 1);
+                typedElement.textContent = text;
+                animationTimeout = setTimeout(type, content.mobile.typeSpeed);
+              } else {
+                animationTimeout = setTimeout(fadeOut, content.mobile.pause);
+              }
+            }
+        
+            function fadeOut() {
+              typedElement.classList.add('fade-out');
+              animationTimeout = setTimeout(() => {
+                currentSentence = (currentSentence + 1) % content.mobile.texts.length;
+                text = '';
+                typedElement.classList.remove('fade-out');
+                type(); // Start typing next sentence
+              }, content.mobile.fadeDuration);
+            }
+        
+            clearAnimation();
+            type(); // Start initial typing
+          }
+        
+          function init() {
+            if (window.innerWidth <= 768) {
+              mobileTyping();
+            } else {
+              desktopTyping();
+            }
+          }
+        
+          // Initial setup
+          init();
+        
+          // Handle window resize
+          window.addEventListener('resize', () => {
+            clearTimeout(animationTimeout);
+            init();
+          });
+        });
+        </script>
+        
+
+<!-- for type erase effect-->
 
     <!-- Main Content -->
     <main class="cards-section" role="main">

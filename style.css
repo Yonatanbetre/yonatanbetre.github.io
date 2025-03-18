@@ -492,6 +492,17 @@ body {
 }
 
 
+#typed-description {
+  opacity: 1;
+  transition: opacity 0.8s ease-in-out;
+  min-height: 80px; /* Prevents layout shift */
+}
+
+#typed-description.fade-out {
+  opacity: 0;
+}
+
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .landing h1 { font-size: 2rem; }
@@ -581,7 +592,7 @@ body {
     overflow-y: auto; /* Allow vertical scrolling */
     gap: 40px;
     height: 100vh;
-    padding: 70px;
+    padding: 60px;
     -webkit-mask-image: linear-gradient(to top, transparent 2%, black 15%, black 85%, transparent 95%);
     mask-image: linear-gradient(to top, transparent 2%, black 15%, black 85%, transparent 95%);
   }
@@ -592,7 +603,21 @@ body {
     padding-top: 20px;
     padding-bottom: 10px;
     height: 50%; /* Adjust height for mobile */
+    margin: 5px;
   }
+
+  /* for reveal erase type effect*/
+
+  #typed-description {
+    min-height: 60px; /* Fixed height to prevent layout shift */
+    overflow: hidden;
+    text-align: center;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* for reveal erase type effect*/
 
   /*reduced gap between cards and landing */
 
