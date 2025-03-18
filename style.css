@@ -496,6 +496,9 @@ body {
   opacity: 1;
   transition: opacity 0.8s ease-in-out;
   min-height: 80px; /* Prevents layout shift */
+  text-align: justify;
+  text-justify: inter-word; /* Better justification */
+  hyphens: auto; /* Enable hyphenation */
 }
 
 #typed-description.fade-out {
@@ -611,7 +614,7 @@ body {
   #typed-description {
     min-height: 60px; /* Fixed height to prevent layout shift */
     overflow: hidden;
-    text-align: center;
+    text-align: justify;
     padding: 0 5%;
     display: flex;
     justify-content: center;
