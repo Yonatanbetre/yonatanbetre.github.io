@@ -493,13 +493,23 @@ body {
       height: 225px; 
   }
   .card-title { font-size: 1rem; padding-bottom: 12px;}
-  .card-description {font-size: 0.8rem;}
+  .card-description {font-size: 0.8rem;
+  /* Apply a horizontal fade effect */
+  -webkit-mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
   .modal-content { 
       padding: 1rem; 
       width: 95%; 
   }
   .card-content {
-    padding: 5px; /* More space on desktop */
+    height: 30%;
+    padding: 1rem;
+    background: rgba(27, 27, 27, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   }
   .image-gallery { 
       grid-template-columns: 1fr; 
