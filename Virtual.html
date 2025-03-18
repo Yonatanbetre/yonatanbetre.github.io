@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Yonatan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Landing Section -->
+    <header class="landing" role="banner">
+        <a href="index.html"><img id="LOGO" src="LOGO_ICONS/MY LOGO.png"></a>
+        <a href="index.html" class="home"><h1>PORTFOLIO</h1></a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" aria-label="Project categories">
+        <a href="Building.html" class="tab">
+            Building Design
+        </a>
+        <a href="Interior.html" class="tab">
+            Interior Design
+        </a>
+        <a href="Furniture.html" class="tab">
+            Furniture Design
+        </a>
+        <a href="Virtual.html" class="tab active" aria-current="page">
+            Virtual Reality
+        </a>
+        <a href="3Dart.html" class="tab">
+            3D Art
+        </a>
+        <a href="3Dart.html" class="tab">
+            Resume
+        </a>
+    </nav>
+
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+  <!-- Hamburger menu (dropdown icon) -->
+  <button class="menu-toggle" aria-label="Open Menu">
+    &#9776; <!-- This is the hamburger icon -->
+   </button>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <ul class="menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Building.html">Building Design</a></li>
+      <li><a href="Interior.html">Interior Design</a></li>
+      <li><a href="Furniture.html">Furniture Design</a></li>
+      <li><a href="Virtual.html">Virtual Reality</a></li>
+      <li><a href="3Dart.html">3D Art</a></li>
+      <li><a href="Virtual.html">Resume</a></li>
+    </ul>
+  </div>
+  
+</nav>
+
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+    <!-- Main Content -->
+    <main class="cards-section" role="main">
+        <!-- 3D Art Projects -->
+        <div class="cards-container" id="art" role="region" aria-label="3D Art projects">
+            <!-- CARD -->
+            <a href="VR-TOUR/index.html" class="card" onclick="openModal('modal-art-1')">
+                <div class="card-image">
+                    <img src="VR-TUMB/BLACK LION.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Black Lion Boardroom VR</h3>
+                    <p class="card-description">Experience a high-end board meeting room with immersive detail. Designed in 3ds Max and rendered with D5 Render for a realistic VR showcase.</p>
+                </div>
+            </a>
+            <!-- CARD -->
+            <a href="VR-TOUR2/index.html" class="card" onclick="openModal('modal-art-2')">
+                <div class="card-image">
+                    <img src="VR-TUMB/SHEGEN BAR.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Shegen Bar VR</h3>
+                    <p class="card-description">Step into a stylish bar interior, crafted in Blender and 3ds Max, and brought to life with D5 Render for an immersive VR experience.</p>
+                </div>
+            </a>
+            <!-- CARD -->
+            <a href="VR-TOUR3/index.html" class="card" onclick="openModal('modal-art-3')">
+                <div class="card-image">
+                    <img src="VR-TUMB/GM-OFFICE.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">GM Furniture S.C. Manager’s Office VR</h3>
+                    <p class="card-description">Explore a modern executive office, designed in Blender and 3ds Max, and rendered with D5 Render for a lifelike VR experience.</p>
+                </div>
+            </a>
+            <!-- CARD -->
+            <a href="VR-TOUR4/index.html" class="card" onclick="openModal('modal-art-4')">
+                <div class="card-image">
+                    <img src="VR-TUMB/AUDITORIUM.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Auditorium VR</h3>
+                    <p class="card-description">Immerse yourself in a spacious and well-designed auditorium, created in Blender and 3ds Max, and rendered with D5 Render for a realistic VR experience.</p>
+                </div>
+            </a>
+            <!-- CARD -->
+            <a href="VR-TOUR5/index.html" class="card" onclick="openModal('modal-art-5')">
+                <div class="card-image">
+                    <img src="VR-TUMB/AYAT.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Apartment VR</h3>
+                    <p class="card-description">Experience a stylish and modern apartment interior, designed in Blender and 3ds Max, and rendered with D5 Render for an immersive VR showcase.</p>
+                </div>
+            </a>
+            <!-- CARD -->
+            <a href="VR-TOUR6/index.html" class="card" onclick="openModal('modal-art-6')">
+                <div class="card-image">
+                    <img src="VR-TUMB/DMC.jpg" alt="3D character sculpture">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Apartment VR</h3>
+                    <p class="card-description">Explore a modern and inviting apartment interior, designed in Blender and 3ds Max, and rendered with D5 Render for an immersive VR experience.</p>
+                </div>
+            </a>
+            
+
+      
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+        <!-- Image Viewer -->
+        <div id="imageViewer" class="image-viewer" role="dialog" aria-modal="true">
+            <button class="close" onclick="closeImageViewer()" aria-label="Close image viewer">&times;</button>
+            <button class="nav-button prev" onclick="prevImage()" aria-label="Previous image">&#10094;</button>
+            <button class="nav-button next" onclick="nextImage()" aria-label="Next image">&#10095;</button>
+            <div class="image-container">
+                <img id="expandedImage" src="" alt="Expanded project image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Links Footer -->
+    <footer class="socials" role="contentinfo">
+        <a href="https://www.linkedin.com/in/yonatan-betre-079487311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn Profile"><img id="icons" src="LOGO_ICONS/Linkedin.png"></a>
+        <a href="mailto:yonatanetbetre@gmail.com" class="social-link" title="Email contact"><img id="icons" src="LOGO_ICONS/Gmail.png"></a>
+        <a href="tel:+251948610320" class="social-link" title="Phone contact"><img id="icons" src="LOGO_ICONS/Phone.png"></a>
+        <a href="https://www.youtube.com/@Studio_Y" class="social-link" title="YouTube Channel"><img id="icons" src="LOGO_ICONS/Youtube.png"></a>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

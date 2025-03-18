@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Yonatan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Landing Section -->
+    <header class="landing" role="banner">
+        <a href="index.html"><img id="LOGO" src="LOGO_ICONS/MY LOGO.png"></a>
+        <a href="index.html" class="home"><h1>PORTFOLIO</h1></a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" aria-label="Project categories">
+        <a href="Building.html" class="tab">
+            Building Design
+        </a>
+        <a href="Interior.html" class="tab">
+            Interior Design
+        </a>
+        <a href="Furniture.html" class="tab">
+            Furniture Design
+        </a>
+        <a href="Virtual.html" class="tab">
+            Virtual Reality
+        </a>
+        <a href="3Dart.html" class="tab active" aria-current="page">
+            3D Art
+        </a>
+        <a href="Resume.html" class="tab">
+            Resume
+        </a>
+    </nav>
+
+
+    <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+  <!-- Hamburger menu (dropdown icon) -->
+  <button class="menu-toggle" aria-label="Open Menu">
+    &#9776; <!-- This is the hamburger icon -->
+   </button>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <ul class="menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Building.html">Building Design</a></li>
+      <li><a href="Interior.html">Interior Design</a></li>
+      <li><a href="Furniture.html">Furniture Design</a></li>
+      <li><a href="Virtual.html">Virtual Reality</a></li>
+      <li><a href="3Dart.html">3D Art</a></li>
+      <li><a href="Virtual.html">Resume</a></li>
+    </ul>
+  </div>
+  
+</nav>
+
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+<!-- Main Content -->
+<main class="cards-section" role="main">
+    <!-- Building Design Projects -->
+    <div class="cards-container" id="building" role="region" aria-label="Building projects">
+    <!-- CARD -->
+      <div class="card" onclick="openModal('modal-design-1')">
+            <div class="card-image">
+                <img src="3DART/A.jpg" alt="Modern apartment building exterior">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Captive soul</h3>
+                <p class="card-description">An explorer stands before a glowing tree in a ruined temple, capturing an atmospheric environment. Modeled and rendered in Blender using Cycles, enhanced in Photoshop.</p>
+            </div>
+        </div>
+    <!-- CARD -->
+      <div class="card" onclick="openModal('modal-design-2')">
+            <div class="card-image">
+                <img src="3DART/B.jpg" alt="Modern apartment building exterior">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Timeless</h3>
+                <p class="card-description">A robed figure stands amidst towering pillars with ancient inscriptions, immersing in the scene's grandeur. Created in Blender with Cycles, enhanced in Photoshop.</p>
+            </div>
+        </div>
+    <!-- CARD -->
+      <div class="card" onclick="openModal('modal-design-3')">
+            <div class="card-image">
+                <img src="3DART/C.jpg" alt="Modern apartment building exterior">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Day dream</h3>
+                <p class="card-description">Two figures stand beneath a floating alien structure in a vast cave. Modeled and rendered in Blender using Cycles, with final touches in Photoshop.</p>
+            </div>
+        </div>
+    <!-- CARD -->
+      <div class="card" onclick="openModal('modal-design-4')">
+            <div class="card-image">
+                <img src="3DART/D.jpg" alt="Modern apartment building exterior">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Era of the past</h3>
+                <p class="card-description">A robed figure gazes at a floating cube in an ancient temple. Captured in Blender with Cycles, enhanced in Photoshop.</p>
+            </div>
+        </div>
+    <!-- CARD -->
+      <div class="card" onclick="openModal('modal-design-5')">
+            <div class="card-image">
+                <img src="3DART/E.jpg" alt="Modern apartment building exterior">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Esoteric traditions</h3>
+                <p class="card-description">Three figures gather before a floating structure in a temple, surrounded by detailed ruins. Modeled and rendered in Blender with Cycles, enhanced in Photoshop.</p>
+            </div>
+        </div>
+    <!-- CARD -->
+    <div class="card" onclick="openModal('modal-design-6')">
+        <div class="card-image">
+            <img src="3DART/F.jpg" alt="Modern apartment building exterior">
+        </div>
+        <div class="card-content">
+            <h3 class="card-title">Sherine of Da'amat</h3>
+            <p class="card-description">Three figures approach a floating temple on water, immersed in the serene environment. Created in Blender with Cycles, enhanced in Photoshop.</p>
+        </div>
+    </div>
+        
+    </div>
+    
+
+  <!-- ====================================================================================================================== -->
+  <!-- ====================================================================================================================== -->
+  <!-- ====================================================================================================================== -->
+
+    <!-- Modals Section -->
+    <!-- Building Design Modal 1 -->
+    <!-- New Modal -->
+    <div id="modal-design-1" class="modal" role="dialog" aria-labelledby="modal-design-1-title">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal('modal-design-1')" aria-label="Close modal">&times;</button>
+            <div class="image-gallery">
+                <img src="3DART/A.jpg" 
+                     alt="Apartment building exterior view" 
+                     onclick="openImageViewer('modal-design-1', this.src)">
+            </div>
+            <h2 id="modal-design-1-title">Captive soul</h2>
+            <p>An explorer stands before a glowing tree in a ruined temple, capturing an atmospheric environment. Modeled and rendered in Blender using Cycles, enhanced in Photoshop.</p>
+            <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+        </div>
+    </div>
+    <!-- New Modal -->
+    <div id="modal-design-2" class="modal" role="dialog" aria-labelledby="modal-design-2-title">
+     <div class="modal-content">
+      <button class="close" onclick="closeModal('modal-design-2')" aria-label="Close modal">&times;</button>
+      <div class="image-gallery">
+          <img src="3DART/B.jpg" 
+               alt="Apartment building exterior view" 
+               onclick="openImageViewer('modal-design-2', this.src)">
+      </div>
+      <h2 id="modal-design-2-title">Timeless</h2>
+      <p>A robed figure stands amidst towering pillars with ancient inscriptions, immersing in the scene's grandeur. Created in Blender with Cycles, enhanced in Photoshop.</p>
+      <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+     </div>
+    </div>
+   
+    <!-- New Modal -->
+    <div id="modal-design-3" class="modal" role="dialog" aria-labelledby="modal-design-3-title">
+      <div class="modal-content">
+       <button class="close" onclick="closeModal('modal-design-3')" aria-label="Close modal">&times;</button>
+       <div class="image-gallery">
+           <img src="3DART/C.jpg" 
+                alt="Apartment building exterior view" 
+                onclick="openImageViewer('modal-design-3', this.src)">
+       </div>
+       <h2 id="modal-design-3-title">Day dream</h2>
+       <p>Two figures stand beneath a floating alien structure in a vast cave. Modeled and rendered in Blender using Cycles, with final touches in Photoshop.</p>
+       <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+      </div>
+     </div>
+
+    <!-- New Modal -->
+    <div id="modal-design-4" class="modal" role="dialog" aria-labelledby="modal-design-4-title">
+      <div class="modal-content">
+       <button class="close" onclick="closeModal('modal-design-4')" aria-label="Close modal">&times;</button>
+       <div class="image-gallery">
+           <img src="3DART/D.jpg" 
+                alt="Apartment building exterior view" 
+                onclick="openImageViewer('modal-design-4', this.src)">
+       </div>
+       <h2 id="modal-design-4-title">Era of the past</h2>
+       <p>A robed figure gazes at a floating cube in an ancient temple. Captured in Blender with Cycles, enhanced in Photoshop.</p>
+       <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+      </div>
+     </div> 
+    
+    <!-- New Modal -->
+    <div id="modal-design-5" class="modal" role="dialog" aria-labelledby="modal-design-5-title">
+      <div class="modal-content">
+       <button class="close" onclick="closeModal('modal-design-5')" aria-label="Close modal">&times;</button>
+       <div class="image-gallery">
+           <img src="3DART/E.jpg" 
+                alt="Apartment building exterior view" 
+                onclick="openImageViewer('modal-design-5', this.src)">
+       </div>
+       <h2 id="modal-design-5-title">Esoteric traditions</h2>
+       <p>Three figures gather before a floating structure in a temple, surrounded by detailed ruins. Modeled and rendered in Blender with Cycles, enhanced in Photoshop.</p>
+       <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+      </div>
+     </div>
+     <!-- New Modal -->
+    <div id="modal-design-6" class="modal" role="dialog" aria-labelledby="modal-design-6-title">
+        <div class="modal-content">
+         <button class="close" onclick="closeModal('modal-design-6')" aria-label="Close modal">&times;</button>
+         <div class="image-gallery">
+             <img src="3DART/F.jpg" 
+                  alt="Apartment building exterior view" 
+                  onclick="openImageViewer('modal-design-6', this.src)">
+         </div>
+         <h2 id="modal-design-6-title">Shrine of Da'amat</h2>
+         <p>Three figures approach a floating temple on water, immersed in the serene environment. Created in Blender with Cycles, enhanced in Photoshop.</p>
+         <p><strong>Tools Used:</strong> Blender, Cycles, Photoshop</p>
+        </div>
+       </div>
+
+
+  <!-- ====================================================================================================================== -->
+        <!-- Image Viewer -->
+        <div id="imageViewer" class="image-viewer" role="dialog" aria-modal="true">
+            <button class="close" onclick="closeImageViewer()" aria-label="Close image viewer">&times;</button>
+            <button class="nav-button prev" onclick="prevImage()" aria-label="Previous image">&#10094;</button>
+            <button class="nav-button next" onclick="nextImage()" aria-label="Next image">&#10095;</button>
+            <div class="image-container">
+                <img id="expandedImage" src="" alt="Expanded project image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Links Footer -->
+    <footer class="socials" role="contentinfo">
+        <a href="https://www.linkedin.com/in/yonatan-betre-079487311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn Profile"><img id="icons" src="LOGO_ICONS/Linkedin.png"></a>
+        <a href="mailto:yonatanetbetre@gmail.com" class="social-link" title="Email contact"><img id="icons" src="LOGO_ICONS/Gmail.png"></a>
+        <a href="tel:+251948610320" class="social-link" title="Phone contact"><img id="icons" src="LOGO_ICONS/Phone.png"></a>
+        <a href="https://www.youtube.com/@Studio_Y" class="social-link" title="YouTube Channel"><img id="icons" src="LOGO_ICONS/Youtube.png"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

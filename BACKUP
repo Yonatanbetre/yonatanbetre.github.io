@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Yonatan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Landing Section -->
+    <header class="landing" role="banner">
+       <a href="index.html"><img id="LOGO" src="LOGO_ICONS/MY LOGO.png"></a>
+       <a href="index.html" class="home"><h1>PORTFOLIO</h1></a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs2" aria-label="Project categories">
+     <a href="Building.html" class="explore">
+          EXPLORE
+      </a>
+    </nav>
+    <nav class="GPT" aria-label="GPTA">
+     <p id="typed-description" aria-live="polite">
+          Hello, I'm [Your Name]. I specialize in Building Design, Interior Design, Furniture Design, Virtual Reality, and 3D Art. Explore my projects below.
+         </p>
+     </nav>
+
+    <!-- Main Content -->
+    <main class="cards-section" role="main">
+     
+    </main>
+
+    <!-- Social Links Footer -->
+    <footer class="socials" role="contentinfo">
+        <a href="https://www.linkedin.com/in/yonatan-betre-079487311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn Profile"><img id="icons" src="LOGO_ICONS/Linkedin.png"></a>
+        <a href="mailto:yonatanetbetre@gmail.com" class="social-link" title="Email contact"><img id="icons" src="LOGO_ICONS/Gmail.png"></a>
+        <a href="tel:+251948610320" class="social-link" title="Phone contact"><img id="icons" src="LOGO_ICONS/Phone.png"></a>
+        <a href="https://www.youtube.com/@Studio_Y" class="social-link" title="YouTube Channel"><img id="icons" src="LOGO_ICONS/Youtube.png"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+background-image: url(BACKGROUND/BACKGROUNDY2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+
+
+  <script>
+    // Wait for window load
+    window.addEventListener('load', () => {
+        const loadingScreen = document.getElementById('loadingScreen');
+        
+        // Add loaded class to start fade-out
+        loadingScreen.classList.add('loaded');
+        
+        // Remove loading screen after transition
+        setTimeout(() => {
+            loadingScreen.remove();
+        }, 500); // Match this with the transition duration
+    });
+</script>

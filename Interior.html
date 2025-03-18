@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio Yonatan</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- Landing Section -->
+    <header class="landing" role="banner">
+        <a href="index.html"><img id="LOGO" src="LOGO_ICONS/MY LOGO.png"></a>
+        <a href="index.html" class="home"><h1>PORTFOLIO</h1></a>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="tabs" aria-label="Project categories">
+        <a href="Building.html" class="tab">
+            Building Design
+        </a>
+        <a href="Interior.html" class="tab active" aria-current="page">
+            Interior Design
+        </a>
+        <a href="Furniture.html" class="tab">
+            Furniture Design
+        </a>
+        <a href="Virtual.html" class="tab">
+            Virtual Reality
+        </a>
+        <a href="3Dart.html" class="tab">
+            3D Art
+        </a>
+        <a href="Resume.html" class="tab">
+            Resume
+        </a>
+    </nav>
+
+    <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+  <!-- Hamburger menu (dropdown icon) -->
+   <button class="menu-toggle" aria-label="Open Menu">
+    &#9776; <!-- This is the hamburger icon -->
+   </button>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-nav">
+    <ul class="menu">
+      <li><a href="Index.html">Home</a></li>
+      <li><a href="Building.html">Building Design</a></li>
+      <li><a href="Interior.html">Interior Design</a></li>
+      <li><a href="Furniture.html">Furniture Design</a></li>
+      <li><a href="Virtual.html">Virtual Reality</a></li>
+      <li><a href="3Dart.html">3D Art</a></li>
+      <li><a href="Virtual.html">Resume</a></li>
+    </ul>
+  </div>
+  
+</nav>
+
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+
+    <!-- Main Content -->
+    <main class="cards-section" role="main">
+        <!-- Interior Design Projects -->
+        <div class="cards-container" id="interior" role="region" aria-label="Interior projects">
+        <!-- CARD -->
+            <div class="card" onclick="openModal('modal-interior-1')">
+                <div class="card-image">
+                    <img src="INTERIOR/A/A1.jpg" alt="3D rendered bedroom design">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Kadisco Asian Paints - Interior Design</h3>
+                    <p class="card-description">An interior design project for Kadisco Asian Paints, crafted in Blender and Cycles, with final enhancements in Photoshop for a stunning and realistic presentation.</p>
+                </div>
+            </div>
+        <!-- CARD -->
+            <div class="card" onclick="openModal('modal-interior-2')">
+                <div class="card-image">
+                    <img src="INTERIOR/B/A.jpg" alt="3D rendered bedroom design">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">3Bedroom Apartment - Interior design</h3>
+                    <p class="card-description">A 3-bedroom apartment designed in 3ds Max, rendered with V-Ray, and refined in Photoshop for a sophisticated and realistic presentation.</p>
+                </div>
+            </div>
+        <!-- CARD -->
+            <div class="card" onclick="openModal('modal-interior-3')">
+                <div class="card-image">
+                    <img src="INTERIOR/C/D.jpg" alt="3D rendered bedroom design">
+                </div>
+                <div class="card-content">
+                    <h3 class="card-title">Collection of Interior design projects</h3>
+                    <p class="card-description">A collection of interior design projects created using Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop, delivering high-quality and realistic visualizations.</p>
+                </div>
+            </div>
+          
+        </div>
+
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+      <!-- ====================================================================================================================== -->
+
+        <!-- Modals Section -->
+        
+        <!-- Interior Design Modal 2 -->
+         <!-- New Modal -->
+        <div id="modal-interior-1" class="modal" role="dialog" aria-labelledby="modal-interior-1-title">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal('modal-interior-1')" aria-label="Close modal">&times;</button>
+                <div class="image-gallery">
+                    <img src="INTERIOR/A/A1.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A2.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A3.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A4.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A5.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A6.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A7.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A8.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A8.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                    <img src="INTERIOR/A/A10.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-1', this.src)">
+                </div>
+                <h2 id="modal-interior-1-title">Kadisco Asian Paints - Interior Design</h2>
+                <p>An interior design project for Kadisco Asian Paints, crafted in Blender and Cycles, with final enhancements in Photoshop for a stunning and realistic presentation.</p>
+                <p><strong>Tools Used:</strong> Blender, Cycles and Photoshop</p>
+            </div>
+        </div>
+        <!-- New Modal -->
+        <div id="modal-interior-2" class="modal" role="dialog" aria-labelledby="modal-interior-2-title">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal('modal-interior-2')" aria-label="Close modal">&times;</button>
+                <div class="image-gallery">
+                    <img src="INTERIOR/B/A.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/B.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/C.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/D.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-21', this.src)">
+                    <img src="INTERIOR/B/E.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/F.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/G.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/H.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                    <img src="INTERIOR/B/I.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-2', this.src)">
+                </div>
+                <h2 id="modal-interior-2-title">3Bedroom Apartment - Interior design</h2>
+                <p>A 3-bedroom apartment designed in 3ds Max, rendered with V-Ray, and refined in Photoshop for a sophisticated and realistic presentation.</p>
+                <p><strong>Tools Used:</strong> 3ds Max, V-Ray, Photoshop</p>
+            </div>
+        </div>
+        <!-- New Modal -->
+        <div id="modal-interior-3" class="modal" role="dialog" aria-labelledby="modal-interior-3-title">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal('modal-interior-3')" aria-label="Close modal">&times;</button>
+                <div class="image-gallery">
+                    <img src="INTERIOR/C/A.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/B.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/D.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/E.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/F.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/G.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/H.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/I.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/J.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                    <img src="INTERIOR/C/frc.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-3', this.src)">
+                </div>
+                <h2 id="modal-interior-3-title">Collection of Interior design projects</h2>
+                <p>A collection of interior design projects created using Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop, delivering high-quality and realistic visualizations.</p>
+                <p><strong>Tools Used:</strong> Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop</p>
+            </div>
+        </div>
+
+
+
+<!-- ====================================================================================================================== -->
+
+
+
+        <!-- Image Viewer -->
+        <div id="imageViewer" class="image-viewer" role="dialog" aria-modal="true">
+            <button class="close" onclick="closeImageViewer()" aria-label="Close image viewer">&times;</button>
+            <button class="nav-button prev" onclick="prevImage()" aria-label="Previous image">&#10094;</button>
+            <button class="nav-button next" onclick="nextImage()" aria-label="Next image">&#10095;</button>
+            <div class="image-container">
+                <img id="expandedImage" src="" alt="Expanded project image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Social Links Footer -->
+    <footer class="socials" role="contentinfo">
+        <a href="https://www.linkedin.com/in/yonatan-betre-079487311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="social-link" title="LinkedIn Profile"><img id="icons" src="LOGO_ICONS/Linkedin.png"></a>
+        <a href="mailto:yonatanetbetre@gmail.com" class="social-link" title="Email contact"><img id="icons" src="LOGO_ICONS/Gmail.png"></a>
+        <a href="tel:+251948610320" class="social-link" title="Phone contact"><img id="icons" src="LOGO_ICONS/Phone.png"></a>
+        <a href="https://www.youtube.com/@Studio_Y" class="social-link" title="YouTube Channel"><img id="icons" src="LOGO_ICONS/Youtube.png"></a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
