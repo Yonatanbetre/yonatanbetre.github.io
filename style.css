@@ -470,8 +470,15 @@ body {
   transition: color 0.3s;
 }
 
-.social-link:hover {
-  color: #d69d00;
+
+#icons {
+  width: 40px; /* Adjust size if needed */
+  height: auto;
+  transition: filter 0.3s ease-in-out;
+}
+
+#icons:hover {
+  filter: invert(40%) sepia(100%) saturate(300%) hue-rotate(180deg);
 }
 
 #icons {
@@ -542,7 +549,6 @@ body {
   transform: translate(-50%, -50%); /* Centering trick */
   z-index: -1; /* Send it behind other content */
   border: none;
-}
 }
 
 @media (max-width: 480px) {
