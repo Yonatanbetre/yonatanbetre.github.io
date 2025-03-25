@@ -99,6 +99,17 @@
                     <p class="card-description">A collection of interior design projects created using Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop, delivering high-quality and realistic visualizations.</p>
                 </div>
             </div>
+
+        <!-- CARD -->
+        <div class="card" onclick="openModal('modal-interior-4')">
+            <div class="card-image">
+                <img src="INTERIOR/D/Kitchen cabinet - SM.jpg" alt="3D rendered bedroom design">
+            </div>
+            <div class="card-content">
+                <h3 class="card-title">Kitchen cabinet design</h3>
+                <p class="card-description">A modern and minimal kitchen cabinet crafted in Blender and Cycles, with final enhancements in Photoshop for a stunning and realistic presentation.</p>
+            </div>
+        </div>
           
         </div>
 
@@ -229,6 +240,23 @@
                 <p><strong>Tools Used:</strong> Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop</p>
             </div>
         </div>
+
+         <!-- New Modal -->
+         <div id="modal-interior-4" class="modal" role="dialog" aria-labelledby="modal-interior-4-title">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal('modal-interior-4')" aria-label="Close modal">&times;</button>
+                <div class="image-gallery">
+                    <img src="INTERIOR/D/Kitchen cabinet - SM.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-4', this.src)">
+                </div>
+                <h2 id="modal-interior-4-title">Collection of Interior design projects</h2>
+                <p>A collection of interior design projects created using Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop, delivering high-quality and realistic visualizations.</p>
+                <p><strong>Tools Used:</strong> Revit, 3ds Max, Blender, V-Ray, Cycles, and Photoshop</p>
+            </div>
+        </div>
+
+
 
 
 
