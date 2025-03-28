@@ -535,10 +535,7 @@ body {
     justify-content: center;
   }
   }
-  .image-gallery { 
-      grid-template-columns: 1fr; 
-      gap: 1rem;
-  }
+  
   .image-gallery img { height: 150px; }
   .nav-button { 
       width: 45px; 
@@ -569,6 +566,11 @@ body {
       right: 1rem; 
       font-size: 2rem; 
   }
+
+  .image-gallery { 
+    grid-template-columns: 1fr; 
+    gap: 1rem;
+}
   .image-gallery img { height: 120px; }
 }
 
