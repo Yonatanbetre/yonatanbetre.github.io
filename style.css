@@ -422,6 +422,19 @@ body {
   overflow: hidden;
   touch-action: none;
 }
+.image-viewer .close {
+  position: absolute;
+  top: 10px;  /* Moves it to the top */
+  right: 10px; /* Moves it to the right */
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1001;
+}
 
 .image-container {
   position: relative;

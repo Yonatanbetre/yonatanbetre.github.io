@@ -178,6 +178,16 @@
                     <p class="card-description">Collection of chair designs, featuring innovative styles and realistic 3D renders. Each design blends modern aesthetics with functionality.</p>
                 </div>
             </div>
+            <!-- CARD -->
+            <div class="card" onclick="openModal('modal-interior-4')">
+             <div class="card-image">
+                <img src="INTERIOR/D/Kitchen cabinet - SM.jpg" alt="3D rendered bedroom design">
+             </div>
+            <div class="card-content">
+                <h3 class="card-title">Kitchen cabinet design</h3>
+                <p class="card-description">A modern and minimal kitchen cabinet crafted in Blender and Cycles, with final enhancements in Photoshop for a stunning and realistic presentation.</p>
+            </div>
+        </div>
         </div>
 
       
@@ -442,6 +452,23 @@
                 <h2 id="modal-furniture-10-title">Collection of chair designs</h2>
                 <p>Collection of chair designs, featuring innovative styles and realistic 3D renders. Each design blends modern aesthetics with functionality.</p>
                 <p><strong>Tools Used:</strong> Rhino, Blender, Cycles, and Photoshop </p>
+            </div>
+        </div>
+        <!-- New Modal -->
+        <div id="modal-interior-4" class="modal" role="dialog" aria-labelledby="modal-interior-4-title">
+            <div class="modal-content">
+                <button class="close" onclick="closeModal('modal-interior-4')" aria-label="Close modal">&times;</button>
+                <div class="image-gallery">
+                    <img src="INTERIOR/D/Kitchen cabinet - SM.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-4', this.src)">
+                    <img src="INTERIOR/D/Kitchen cabinet - SM B.jpg" 
+                         alt="Bedroom interior design" 
+                         onclick="openImageViewer('modal-interior-4', this.src)">
+                </div>
+                <h2 id="modal-interior-4-title">Kitchen cabinet design</h2>
+                <p>A modern and minimal kitchen cabinet crafted in Blender and Cycles, with final enhancements in Photoshop for a stunning and realistic presentation.</p>
+                <p><strong>Tools Used:</strong>Blender, Cycles, and Photoshop</p>
             </div>
         </div>
 
